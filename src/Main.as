@@ -2,7 +2,9 @@ package
 {
 	import flash.display.Sprite;
 	import flash.events.Event;
+	import generators.envtree.EnvTreeWorld;
 	import net.flashpunk.Engine;
+	import net.flashpunk.FP;
 	[SWF(width="800",height="600",backgroundColor="#000000")]
 	/**
 	 * ...
@@ -19,7 +21,7 @@ package
 		
 		override public function init():void
 		{
-			//FP.world = new MapWorld();
+			FP.world = new EnvTreeWorld();
 			super.init();
 		}
 		
